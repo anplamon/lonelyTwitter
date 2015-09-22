@@ -3,9 +3,6 @@ package ca.ualberta.cs.lonelytwitter;
 import java.io.IOException;
 import java.util.Date;
 
-/**
- * Created by joshua2 on 9/16/15.
- */
 public abstract class Tweet extends Object implements Tweetable {
     private String text;
     private Date date;
@@ -33,6 +30,9 @@ public abstract class Tweet extends Object implements Tweetable {
         }
     }
 
+    public Date getDate() {
+        return date
+    }
 
     public void setDate(Date date) {
         this.date = date;
